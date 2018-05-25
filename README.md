@@ -20,6 +20,8 @@ This instructs Vagrant to start the VMs and install GlusterFS on them.
 
 ```console
 $ vagrant up
+## need to wait, vagrant will download files
+
 ```
 
 ## Probe for peers
@@ -28,6 +30,12 @@ Before we can create a volume spanning multiple machines, we need to tell Gluste
 
 ```console
 $ vagrant ssh gluster-server-1 -c 'sudo gluster peer probe 172.21.12.12 ; sudo gluster peer probe 172.21.12.13'
+
+# You can also cd to directory same with Vagrantfile, and
+$ vagrant ssh gluster-server-1
+# This will go into linux shell, and then do command
+$ sudo gluster peer probe 172.21.12.12
+# Below operations is the same
 ```
 
 ## Create a volume
