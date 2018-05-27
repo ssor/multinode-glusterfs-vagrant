@@ -2,6 +2,8 @@
 
 This guide walks users through setting up a 3-node GlusterFS cluster, creating and starting a volume, and mounting it on a client.
 
+本项目的目标是说明如何通过vagrant部署一个拥有3个节点的GlusterFS集群，并创建一个volume，随后将其挂在到客户端节点上
+
 It's fun to learn [GlusterFS](http://gluster.org), kids!
 
 ## Install prerequisites
