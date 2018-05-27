@@ -33,8 +33,10 @@ $ vagrant ssh gluster-server-1 -c 'sudo gluster peer probe 172.21.12.12 ; sudo g
 
 # You can also cd to directory same with Vagrantfile, and
 $ vagrant ssh gluster-server-1
+
 # This will go into linux shell, and then do command
 $ sudo gluster peer probe 172.21.12.12
+
 # Below operations is the same
 ```
 
